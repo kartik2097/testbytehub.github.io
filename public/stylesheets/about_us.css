@@ -1,0 +1,354 @@
+
+/* body {
+} */
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  background: #f0f8ff;
+  box-shadow: inset 0 0 5px  #E0A800; 
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e37351;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e37351;
+}
+
+/* ScrollBar */
+
+p {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: rgb(67, 66, 68);
+}
+/* --------------------------------------------------------------------------------- */
+#navbar {
+  position: fixed;
+  top: -50px;
+  left: -16px;
+  width: 10%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(208, 33, 224, 0.3),
+      rgba(208, 33, 224, 0.3)
+    ),
+    url("/images/About-back.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 75%, 0 0);
+  position: relative;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  opacity: 0.9;
+  z-index: -1;
+  /* background: linear-gradient(to right, #1a5aa3 0%, #40dfcc 0%, #882ec4 100%); */
+}
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  opacity: 0.3;
+  z-index: -1;
+  background: transparent;
+}
+
+.navbar-nav {
+  text-align: center;
+  color: black;
+  padding: 15px 0px;
+}
+.navbar-nav a {
+  color: black !important;
+}
+.navbar-nav a:hover {
+  color: white !important;
+  font-size: 20px;
+}
+#myBtn {
+  /* display: none; */
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  color: #fff;
+  background: black;
+  padding: 12px;
+  border-radius: 10px;
+}
+.navbar-toggler {
+  color: black;
+}
+.custom-toggler.navbar-toggler {
+  border-color: black;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.Signin {
+  margin: 0 5px;
+  border: 1.5px solid black;
+  border-radius: 10px;
+}
+.Signin :hover {
+  border-radius: 10px;
+  background-color: #f0f8ff;
+}
+
+.Signin a {
+  color: black !important;
+}
+.Signin a:hover {
+  color: #c2477e !important;
+}
+.Signup {
+  margin: 0 5px;
+  border: 1.5px solid black;
+  border-radius: 10px;
+}
+.Signup :hover {
+  border-radius: 10px;
+  background-color: #f0f8ff;
+}
+
+.Signup a {
+  color: black !important;
+}
+.Signup a:hover {
+  color: #c2477e !important;
+}
+
+@media only screen and (max-width: 760px) {
+  .navbar-nav {
+    font-size: 20px;
+  }
+  .nav-link {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 2px 0px;
+  }
+  .nav-link:hover {
+    background-color: #000;
+  }
+  .Signup {
+    border: none;
+    border-radius: 0px;
+  }
+  .Signin {
+    border: none;
+    border-radius: 0px;
+  }
+  .navbar-nav a:hover {
+    color: #c2477e !important;
+    font-size: 20px;
+  }
+}
+body {
+  background-image: url("/images/asfalt-dark\ \(1\).png");
+  font-family: "Raleway", sans-serif !important;
+}
+
+.About {
+  text-align: center;
+  margin: 8rem 0rem;
+}
+.About-heading {
+  font-size: 50px;
+  font-weight: bold;
+}
+.About-Para {
+  width: 50%;
+  margin-left: 25%;
+  color: white;
+  font-size: 18px;
+}
+@media only screen and (max-width: 414px) {
+  .About-Para {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+.Goal-col-1 img {
+  padding: 1rem;
+  width: 25rem;
+  height: 20rem;
+}
+
+.Goal {
+  margin: 10px;
+  text-align: left;
+}
+.Goal-Para {
+  color: black;
+}
+@media only screen and (max-width: 414px) {
+  .Goal-col-1 img {
+    width: 15rem;
+    height: 15rem;
+    margin-left: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Goal-col-1 img {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+.Team {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+}
+
+h3 {
+  font-size: 25px;
+  color: #555;
+  font-weight: bold;
+}
+h5 {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+.Team .Team-heading {
+  font-size: 36px;
+}
+.Team .col {
+  margin-bottom: 40px;
+}
+.Team img {
+  width: 100px;
+  margin-top: -70px;
+}
+.Team i {
+  font-size: 26px;
+  color: #555;
+}
+.Team p {
+  font-weight: 500;
+  text-align: left;
+}
+.Team .card {
+  width: 280px;
+  border-radius: 0;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+}
+
+.Team .card:hover {
+  background-image: linear-gradient(to right, #990db6 0%, #e37351 100%);
+  transform: translateY(-20px);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 10px rgb(129, 129, 129);
+}
+.Team .card:hover h3,
+.Team .card:hover i {
+  color: #fff;
+}
+.Team #facebook:hover {
+  color: blue;
+}
+.Team #instagram:hover {
+  color: rgb(209, 56, 95);
+}
+.Team #linkedin:hover {
+  color: blue;
+}
+@media only screen and (max-width: 414px) {
+  .Team .card {
+    margin: 5rem 0rem 0rem 2.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Team .card {
+    margin: 5rem 0rem 0rem 2.5rem;
+  }
+}
+.bg-footer {
+  color: #40dfcc;
+  background-color: #4c4177;
+  background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+  /* background-image: url("../assets/images/img/texture.png"); */
+}
+.bg-footer a {
+  color: #fff;
+}
+.bg-footer a:hover {
+  color: #40dfcc;
+  text-decoration: none;
+}
+.logo-footer {
+  margin-top: -20px;
+  display: inline-block;
+}
+.logo-footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.footer {
+  border-color: #494a43 !important;
+  color: #40dfcc !important;
+  /* padding-top: 275px; */
+}
+footer .links {
+  margin-left: 5%;
+  margin-top: 1%;
+}
+footer .links2 {
+  margin-top: 1%;
+}
+.links2 h4 {
+  color: transparent;
+}
+#Facebook:hover,
+#Twitter:hover,
+#linkedin:hover {
+  color: blue;
+}
+#Instagram:hover {
+  color: rgb(235, 4, 100);
+}
+
+/* Footer */

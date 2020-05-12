@@ -1,0 +1,109 @@
+ /* ScrollBar */
+::-webkit-scrollbar {
+    width: 5px;
+  }  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #843cca;
+    border-radius: 3px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #843cca;
+  }
+  
+  /* ScrollBar */
+ .navbar-nav {
+    text-align: center;
+    color: grey;
+  }
+  .navbar-brand img{
+    width: 6rem;
+  }
+  .navbar-nav a {
+    color: grey !important;
+    font-family: "Raleway", sans-serif;
+  }
+  .navbar-nav a:hover {
+    color: #000 !important;
+    font-weight: bold;
+  }
+  .navbar-toggler {
+    color: #000;
+    z-index: 1;
+  }
+  .custom-toggler.navbar-toggler {
+    border-color: #000;
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  
+  @media only screen and (max-width: 760px) {
+    .navbar-nav {
+      font-size: 20px;
+    }
+    .nav-link {
+      border: 1px solid #000;
+      border-radius: 25px;
+      margin: 2px 0px;
+    }
+    .nav-link:hover {
+      background-color: #000;
+    } 
+  } 
+
+
+.jumbotron {
+    background: linear-gradient(to right, #1a5aa3 0%, #40dfcc 0%, #882ec4 100%);
+    padding: 1rem !important ;
+  }
+  .card{
+      padding: 10px;
+      font-family: 'Ubuntu', sans-serif;
+  }
+  .card-block img{
+      width: 100px;
+      float: left;
+      border-radius: 10px;
+      box-shadow: 0 0px 6px 0px black;
+  }
+  .bg-color{
+    background-color: #000 !important;
+  }
+  .event-card-text{
+   text-align: center;
+   line-height: 0.2;
+   color: white;
+  }
+  .event-date{
+      color: grey;
+      font-size: 14px;
+  }
+  .des-reg{
+      padding: 0px 0px 20px 0px;
+  }
+
+  .register-card,.des-card{
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
+  }
+  .register-header .btn{
+      width: 100%;
+  }
+  .rigister-body{
+    color: grey;
+  }
+  @media only screen and (max-width: 768px){
+      .event-image img{
+          display: none;
+      }
+      .event-content h3{
+          font-size: 20px;
+      }
+  }
+  
+  

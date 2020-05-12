@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Events | Bytehub </title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="/stylesheets/eventRegister.css">
+  <link rel="shortcut icon" href="./assets/logo.png" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="brand"><span>Event </span>Name</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Event Details</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> Date</li>
+          <li><i class="fa fa-phone"></i> Time</li>
+          <li><i class="fa fa-envelope"></i> Platform</li>
+        </ul>
+        <h3>Bytehub India</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> Greater Noida, India</li>
+          <li><i class="fa fa-phone"></i> (+91) 7066997723</li>
+          <li><i class="fa fa-envelope"></i> contact@bytehub.in</li>
+        </ul>
+        <h3>Omkar Deshmukh</h3>
+      </div>
+      <div class="contact">
+        <h3>Fill this Form</h3>
+        <div class="alert">Thanks! Your're successfully registerd for the event!</div>
+        <form id="EventForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Designation</label>
+            <input type="text" name="company" id="company">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p>
+            <label>College / University Name</label>
+            <input type="text" name="college" id="college" required>
+          </p>
+          <p class="full">
+            <label>Any Other Suggestions!</label>
+            <textarea name="message" rows="3" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Register</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+  <script src="/javascripts/eventRegister.js"></script>
+</body>
+</html>

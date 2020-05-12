@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MB3Z5JF');</script>
+    <!-- End Google Tag Manager -->
+    <title>Student | ByteHub</title>
+    <meta name="description"
+        content="Bytehub india is a Community of like-minded Technology Enthusiasts, Students and Professionals who help each other to push their limits. Bytehub as a platform for techies not only helps you learn & grow together, but also helps you explore new opportunities!" />
+    <meta name="keywords"
+        content="Bytehub, BytehubIndia, ByteHub India, Bytehub Decoding Future,tech community,tech enthusiast" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/student.css">
+    <link rel="shortcut icon" href="../assets/logo.png" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="/javascripts/login-register.js" type="text/javascript"></script>
+    <link href="/stylesheets/login-register.css" rel="stylesheet" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151051190-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151051190-1');
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB3Z5JF" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav>
+        <div id="navbar">
+            <a href="#">
+                <img src="/images/bytehub(2).png" alt="" srcset="" style="width: 6%;">
+            </a>
+        </div>
+        <!-- <div id="myNav" class="overlay ">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Home</a>
+          <a href="#">Post</a>
+          <a href="#">Media</a>
+          <a href="#">About Us</a>
+        </div>
+      </div>
+      <span class="toggle-button" onclick="openNav()">&#9776;</span> -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <p style="color: #0f2b2c;">Bytehub</p>
+            <button class="navbar-toggler custom-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/student">Student</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/school">School</a>
+                    </li>
+                    <li class="nav-item Signin">
+                        <a class="nav-link Signin-link" href="/login">Login</a>
+                      </li>
+                      <li class="nav-item Signup">
+                        <a class="nav-link Signup-link" href="/register">Register</a>
+                      </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- main layout -->
+        <div class="container">
+            <div class="modal fade login" id="loginModal">
+                <div class="modal-dialog login animated">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <p style="text-align: center;">Login with</p>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="box">
+                                <div class="content">
+                                    <div class="social">
+                                        <a class="circle github" href="#">
+                                            <i class="fa fa-github fa-fw"></i>
+                                        </a>
+                                        <a id="google_login" class="circle google" href="#">
+                                            <i class="fa fa-google-plus fa-fw"></i>
+                                        </a>
+                                        <a id="facebook_login" class="circle facebook" href="#">
+                                            <i class="fa fa-facebook fa-fw"></i>
+                                        </a>
+                                    </div>
+                                    <div class="division">
+                                        <div class="line l"></div>
+                                        <span>or</span>
+                                        <div class="line r"></div>
+                                    </div>
+                                    <div class="error"></div>
+                                    <div class="form loginBox">
+                                        <form method="" action="" accept-charset="UTF-8">
+                                            <input id="login-email" class="form-control" type="text" placeholder="Email"
+                                                name="email">
+                                            <input id="login-password" class="form-control" type="password"
+                                                placeholder="Password" name="password">
+                                            <button class="btn-login" type="button" value="Login"
+                                                onclick="loginAjax()">Login</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="content registerBox" style="display:none;">
+                                    <div class="form">
+                                        <form method="" html="{:multipart=>true}" data-remote="true" action=""
+                                            accept-charset="UTF-8">
+                                            <input id="email" class="form-control" type="text" placeholder="Email"
+                                                name="email">
+                                            <input id="password" class="form-control" type="password"
+                                                placeholder="Password" name="password">
+                                            <input id="password_confirmation" class="form-control" type="password"
+                                                placeholder="Retype Password" name="password_confirmation">
+                                            <input class="btn-default btn-register" type="button" value="Create account"
+                                                name="commit">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="forgot login-footer">
+                                <span>Looking to
+                                    <a href="javascript: showRegisterForm();">create an account</a>
+                                    ?</span>
+                            </div>
+                            <div class="forgot register-footer" style="display:none">
+                                <span>Already have an account?</span>
+                                <a href="javascript: showLoginForm();">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="features" class="features section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-aos="fade-in" style="color:#0ae9c4">For Students</h2>
+                    <!-- <p data-aos="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit
+                        consequatur
+                        cupiditate
+                        laudantium accusantium corporis neque voluptate obcaecati. Voluptatibus optio consequatur ea
+                        earum
+                        nihil ipsam
+                        molestias suscipit incidunt tempora debitis?</p> -->
+
+                </div>
+                <div class="row content">
+                    <div class="col-md-5" data-aos="fade-right">
+                        <img src="/images/journey.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 pt-4" data-aos="fade-left">
+                        <h3 style="color:#0ae9c4">Together we are a part of the Journey</h3>
+                        <p style="color:whitesmoke; font-weight: 100">
+                            As a part of our community you will be indulged in a variety of different learning
+                            events.Where you will be having the opportunity to showcase your talent and skills
+                            infront of the Corporate Experts.Which will enhance your chances to find your level of
+                            innovative thinking and get rewarded for it,and we will make sure the right talent
+                            meets the right opportunity in future..
+                            Together we learn,Together we grow and Together we are a part of the innovation..
+                        </p>
+                    </div>
+                </div>
+                <div class="row content">
+                    <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+                        <img src="/images/img/student.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+                        <h3 style="color:#0ae9c4">Socialisation </h3>
+                        <p style="color:whitesmoke; font-weight: 100">
+                            We offer students and industry experts different tools oriented towards collaborative
+                            learning: forums,
+                            It does not only involve finding orientation and support at occasional times, but
+                            encouraging participation, completing training with other points of view,
+                            empathising and strengthening personal relationships through synergy, generating the
+                            sensation of belonging to a group
+                            – Socialising. Additionally the student increases their level of commitment, and finds
+                            suitable contexts for strengthening
+                            their skills and attitudes for learning.
+                        </p>
+                    </div>
+                </div>
+                <div class="row content">
+                    <div class="col-md-5" data-aos="fade-right">
+                        <img src="/images/img/book.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 pt-5" data-aos="fade-left">
+                        <h3 style="color:#0ae9c4">Technological skills</h3>
+                        <p style="color:whitesmoke; font-weight: 100">
+                            Technological development is constant in our daily lives. Acquiring technological skills
+                            from the digital environments that
+                            a learning platform offers is practically essential for knowing how to adapt to changes in
+                            the existing models and the professional
+                            activity of the future of our society. Among these skills, learning platforms begin with the
+                            mastery of ICT (information and communication technology)
+                            to use them to learn how to access the content that complements learning, to select the most
+                            relevant elements, analyse them,
+                            and draw conclusions. In fact, technological skills help to develop critical thinking,
+                            problem solving, creativity and collaboration.
+                            Additionally, they foster interest and curiosity in knowledge and innovation, while
+                            improving the capacity for initiative, adaptability
+                            and integration.
+                        </p>
+                    </div>
+                </div>
+                <div class="row content">
+                    <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+                        <img src="/images/img/backpack.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+                        <h3 style="color:#0ae9c4">Management of information and time</h3>
+                        <p style="color:whitesmoke; font-weight: 100">
+                            We provide multiple additional tools for planning training such as schedules, notifications,
+                            communications
+                            and upcoming events.Consequently, students learn to coordinate their activities, to be more
+                            selective, and to establish priorities, optimising their
+                            time and dedication. This helps them obtain the maximum performance from their efforts.
+                        </p>
+                    </div>
+                </div>
+                <div class="row content">
+                    <div class="col-md-5" data-aos="fade-right">
+                        <img src="/images/img/pencil.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 pt-5" data-aos="fade-left">
+                        <h3 style="color:#0ae9c4">Sense of responsibility</h3>
+                        <p style="color:whitesmoke; font-weight: 100">Moving on, we have multiple variables for checking
+                            the success of
+                            learning. In this sense,
+                            Through the self-evaluation, the student
+                            becomes aware of their progress, their level of learning and their areas for improvement.
+                            Therefore, self-evaluation is an exercise in responsibility,
+                            a precise and effective way of understanding the level of learning. Additionally, This
+                            allows the level of commitment of the student to be maintained,
+                            while reducing the amount of pressure on them, as the processes for measuring the
+                            effectiveness of learning are not limited to occasional controls upon
+                            which the whole qualification is based.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- *********************** Footer Starts *********************** -->
+        <%- include('footer')%>
+        <!-- *********************** Footer Starts *********************** -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script src="/bootstrap-4.3.1-dist/js/jquery.js"></script>
+        <script src="/bootstrap-4.3.1-dist/js/popper.min.js"></script>
+        <script src="/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+        <!-- Un-Comment this if you want to directly open login-signup model after reload -->
+        <!-- <script type="text/javascript">
+      $(document).ready(function () {
+        openLoginModal();
+      });
+    </script> -->
+
+
+        <script>
+            mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunctiion() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = 'block';
+                } else {
+                    mybutton.style.display = 'none';
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-90px";
+                }
+            }
+
+
+
+
+
+            !(function ($) {
+                "use strict";
+                // Back to top button
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('.back-to-top').fadeIn('slow');
+                    } else {
+                        $('.back-to-top').fadeOut('slow');
+                    }
+                });
+                $('.back-to-top').click(function () {
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 1500, 'easeInOutExpo');
+                    return false;
+                });
+                // Initi AOS
+                AOS.init({
+                    duration: 800,
+                    easing: "ease-in-out"
+                });
+
+            })(jQuery);
+            app.get(htmlExt('school'), controller.web.school);
+        </script>
+</body>
+
+</html>
